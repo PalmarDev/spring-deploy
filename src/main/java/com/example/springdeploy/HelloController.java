@@ -9,12 +9,9 @@ public class HelloController {
 
     @Value("${app.message}")
     String message;
-    @Value("${app.varexample}")
-    String message2;
 
     @GetMapping("/hola")
     public String holaMundo(){
-        System.out.println(message2);
         System.out.println(message);
         return "Hola Mundo que tal vamos con spring!!!";
     }
